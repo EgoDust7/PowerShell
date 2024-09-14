@@ -15,6 +15,7 @@
 try {
 	[System.Console]::Beep(500,300)
 	Start-Sleep -milliseconds 300
+ 
 	exit 0 # success
 } catch {
 	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
